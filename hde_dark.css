@@ -1,0 +1,249 @@
+#result {
+        border-collapse: separate;
+    border-spacing: 15px;
+}
+
+
+
+.floating-window {
+            width: 700px;
+            height: 580px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            transition: top 0.5s ease-in-out;
+            cursor: move;
+                z-index: 99999;
+    }
+
+.visible {
+  top: 0px!important;
+}
+
+.hidden {
+  top: -580px!important;
+  transition: top 0.5s ease-in-out;
+}
+
+
+
+#toggleButton:hover {
+  background: rgb(45 51 58 / 24%);
+}
+
+#panel-content .info-form {
+  padding: 10px;
+}
+
+.heading {
+      font-size: 0.8em;
+    font-weight: bold;
+    color: #282828;
+    margin: 0;
+}
+
+#panel-content {
+    background-color: rgb(36 36 36 / 29%);
+    border-radius: 10px;
+    z-index: 99999;
+    box-shadow: 2px 1px 10px rgb(23 23 23);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+        background-color: rgb(0 0 0 / 13%);
+    backdrop-filter: blur(5px);
+}
+
+#toggleButton {
+  background-color: transparent;
+  border: none;
+  color: #999;
+  cursor: pointer;
+  float: right;
+  font-size: 20px;
+  outline: none;
+  padding: 0px;
+  margin: 0px;
+  left: 0px;
+  width: 700px;
+  height: 30px;
+
+  position: absolute;
+
+      border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    top: 571px;
+}
+
+#toggleButton i
+{
+    transform: rotateZ(-90deg);
+    transition: 0.5s ease-in-out;
+}
+
+#toggleButton i.open
+{
+    transform: rotateZ(90deg);
+}
+
+
+
+.info-form {
+  padding-top: 20px;
+}
+
+.heading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+#ticketNumber {
+    display: inline-block;
+    background-color: #258EFF;
+    color: rgb(255 255 255);
+    padding: 10px 10px;
+    border-radius: 25px;
+    margin: 5px 5px;
+    font-size: 0.9em;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+ #clearticket, #preProcessing, #magicSearch {
+    display: inline-block;
+    background-color: #222529d4;
+    color: rgb(236 236 236);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 0.9em;
+    font-weight: 100;
+}
+
+.info-form p
+{
+      color: rgb(113 113 113);
+    font-size: 0.8em;
+}
+
+
+#rightKeywords input {
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    /* font-size: 0.9375rem; */
+    font-weight: 400;
+    line-height: 1.53;
+    color: #697a8d;
+    background-color: #fff;
+    background-clip: padding-box;
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 5px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        width: 660px;
+    
+    
+    /* color: aqua; */
+    color: rgb(236, 236, 236);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #222529d4;
+    border: 1px solid #565856;
+}
+
+
+#magicSearch {
+  display: inline-block;
+  background-color: #222529d4;
+  color: #ececec;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 450px;
+  width: 660px;
+  color: #ececec;
+  border-radius: 20px;
+  overflow-y: auto;
+
+}
+
+
+.tab-buttons {
+  display: flex;
+  background-color: #282b2f;
+      margin-top: -20px;
+    transform: translateY(35px);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  color: #ececec;
+    font-size: 0.8em;
+    color: #bbbbbb;
+    font-family: sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab-button:first-child {
+    border-top-left-radius: 20px;
+}
+
+
+.tab-button:hover{
+    background: #41414182;
+}
+
+.tab-button.active {
+    color: #effffa;
+    background: #202327;
+}
+
+.tab-content {
+  display: none;
+}
+
+
+#result tr {
+    width: 100%;
+    display: block;
+    margin: 5px;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+#result tr td:first-child {
+        max-width: 32px;
+/*        word-break: break-all;*/
+}
+
+
+
+#statusFilters {display: none}
+
+#count {
+/*    position: absolute;
+    color: #cdcdcd;
+    right: 10px;
+    top: 10px;*/
+    display: none;
+}
